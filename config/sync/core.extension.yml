@@ -1,5 +1,7 @@
 module:
+  amazing_apps_default_content: 0
   automated_cron: 0
+  better_normalizers: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -7,16 +9,21 @@ module:
   ckeditor: 0
   color: 0
   config: 0
-  contact: 0
   contextual: 0
   datetime: 0
   dblog: 0
+  default_content: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  graphql: 0
+  graphql_core: 0
+  graphql_twig: 0
+  graphql_views: 0
+  hal: 0
   help: 0
   history: 0
   image: 0
@@ -29,6 +36,7 @@ module:
   quickedit: 0
   rdf: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
