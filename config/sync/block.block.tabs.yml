@@ -1,15 +1,13 @@
-uuid: b44bb610-986d-4f07-8a43-e93feaa38b4a
+uuid: 28db9dfe-bea4-4fd0-af43-2eacbfb8d51f
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-_core:
-  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
-id: bartik_local_tasks
-theme: bartik
+    - amazing_apps
+id: tabs
+theme: amazing_apps
 region: content
-weight: -40
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
@@ -18,5 +16,5 @@ settings:
   provider: core
   label_display: '0'
   primary: true
-  secondary: true
+  secondary: false
 visibility: {  }

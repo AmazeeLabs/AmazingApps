@@ -1,22 +1,20 @@
-uuid: 7577004f-cc67-4039-ba66-aa6da7479194
+uuid: a74a1060-28e7-462d-b116-96e8ec281b31
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-_core:
-  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
-id: bartik_messages
-theme: bartik
-region: highlighted
+    - amazing_apps
+id: messages
+theme: amazing_apps
+region: content
 weight: 0
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: Messages
   provider: system
   label_display: '0'
 visibility: {  }
