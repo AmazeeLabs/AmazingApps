@@ -1,0 +1,17 @@
+{
+  "schema": {
+    "request": {
+      "url" : "http://localhost:8888/graphql",
+      "method" : "POST",
+      "postIntrospectionQuery" : true
+    }
+  },
+
+  "endpoints" : [
+    {
+      "name": "Default (http://localhost:8888/graphql)",
+      "url": "http://localhost:8888/graphql"
+    }
+  ]
+
+}
