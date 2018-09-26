@@ -1,0 +1,5 @@
+<ul class="menu">
+  {% for link in links %}
+    <li class="menu__item"><a href="{{ link.url.path }}">{{ link.label }}</a></li>
+  {% endfor %}
+</ul>

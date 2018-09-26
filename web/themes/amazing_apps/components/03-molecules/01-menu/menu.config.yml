@@ -1,0 +1,15 @@
+label: Menu
+context:
+  links:
+    - label: Home
+      url:
+        path: '#'
+    - label: Blog
+      url:
+        path: '#'
+    - label: Team
+      url:
+        path: '#'
+    - label: Jobs
+      url:
+        path: '#'

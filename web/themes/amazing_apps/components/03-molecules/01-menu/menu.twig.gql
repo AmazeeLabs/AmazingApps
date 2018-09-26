@@ -1,0 +1,8 @@
+fragment Menu on Menu {
+  links {
+    label
+    url {
+      path
+    }
+  }
+}
