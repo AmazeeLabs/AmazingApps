@@ -1,0 +1,19 @@
+.logo {
+  color: var(--color-highlight);
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.logo > a {
+  text-decoration: none;
+}
+
+.logo svg {
+  height: 100%;
+  width: auto;
+}
+
+.logo path {
+  fill: var(--color-text) !important;
+}
