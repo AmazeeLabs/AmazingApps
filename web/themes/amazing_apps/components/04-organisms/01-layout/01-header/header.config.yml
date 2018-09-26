@@ -1,0 +1,3 @@
+label: Header
+context:
+  headerNav: '@menu'

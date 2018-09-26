@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu {
+  display: flex;
+}
+
+.header .menu__item {
+}
+
+.header .menu__item a {
+  display: block;
+  padding: 1em;
+  transition: background-color 0.5s ease;
+  color: var(--color-highlight);
+  background: var(--color-background);
+}
+
+.header .menu__item a:hover,
+.header .menu__item a:focus {
+  background: var(--color-highlight);
+  color: var(--color-background);
+}
+
+.header .logo {
+  height: 100px;
+}

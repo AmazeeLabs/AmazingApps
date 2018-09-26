@@ -1,0 +1,5 @@
+fragment Footer on Query {
+  footerNav:menuByName(name: "footer") {
+    ... Menu
+  }
+}

@@ -1,0 +1,5 @@
+fragment Header on Query {
+  headerNav:menuByName(name: "main") {
+    ... Menu
+  }
+}

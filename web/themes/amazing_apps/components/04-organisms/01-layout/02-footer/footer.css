@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.footer .menu {
+  text-align: right;
+}
+
+.footer .menu a:hover,
+.footer .menu a:focus {
+  text-decoration: underline;
+}

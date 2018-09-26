@@ -1,0 +1,3 @@
+label: Footer
+context:
+  footerNav: '@menu'
