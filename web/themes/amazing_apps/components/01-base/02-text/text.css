@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4em;
+
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-highlight);
+}

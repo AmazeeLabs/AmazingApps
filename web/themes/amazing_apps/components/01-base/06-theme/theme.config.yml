@@ -1,0 +1,17 @@
+label: Color Theme
+context: &default
+  theme: white
+  level: 1
+  text: '@headline.text'
+  formatted: '@text.formatted'
+  items: '@list.items'
+
+variants:
+  - name: Black
+    <<: *default
+    context:
+      theme: black
+  - name: Yellow
+    <<: *default
+    context:
+      theme: yellow

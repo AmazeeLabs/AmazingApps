@@ -1,0 +1,22 @@
+.theme-white, .theme-yellow, .theme-black {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.theme-white {
+  --color-background: var(--color-white);
+  --color-text: var(--color-black);
+  --color-highlight: var(--color-blue);
+}
+
+.theme-yellow {
+  --color-background: var(--color-yellow);
+  --color-text: var(--color-black);
+  --color-highlight: var(--color-black);
+}
+
+.theme-black {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-highlight: var(--color-yellow);
+}

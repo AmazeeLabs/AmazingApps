@@ -1,0 +1,8 @@
+label: Image
+context:
+  alt: A placeholder image
+  image:
+    url: 'https://via.placeholder.com/400x300'
+    width: 400
+    height: 300
+

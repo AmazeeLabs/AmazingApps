@@ -1,0 +1,20 @@
+#block-tabs ul {
+  list-style: none;
+  padding: 0;
+}
+
+#block-tabs li {
+  display: inline-block;
+}
+
+#block-tabs a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+#block-tabs a.is-active {
+  background: var(--color-yellow);
+  color: var(--color-text);
+  font-weight: bold;
+}

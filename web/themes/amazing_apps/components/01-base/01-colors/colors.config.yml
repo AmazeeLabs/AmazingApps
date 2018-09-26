@@ -1,0 +1,13 @@
+label: Colors
+context:
+  color: white
+variants:
+  - name: Black
+    context:
+      color: black
+  - name: Yellow
+    context:
+      color: yellow
+  - name: Blue
+    context:
+      color: blue
