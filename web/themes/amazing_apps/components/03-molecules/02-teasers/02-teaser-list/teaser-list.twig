@@ -1,0 +1,13 @@
+{% if teasers %}
+  <ul class="teaser-list">
+    {% for teaser in teasers %}
+      {% if teaser %}
+        <li>
+          {% include '#teaser' with teaser only %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% else %}
+  <p><em>{{ 'Nothing found. Sadface :(' | t }}</em></p>
+{% endif %}

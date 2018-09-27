@@ -1,0 +1,5 @@
+label: Layout example
+context:
+  header: '@header'
+  footer: '@footer'
+

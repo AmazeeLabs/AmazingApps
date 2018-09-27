@@ -1,0 +1,14 @@
+<article class="teaser">
+  {% if thumbnail %}
+    {% include '#image' with thumbnail only %}
+  {% endif %}
+  <div class="teaser-content">
+    <h3>{{ title }}</h3>
+    {% include '#date' %}
+    {% include '#more-link' with {
+      url: url.path,
+      title: ('Read more about: ' | t ) ~ title,
+      text: 'Learn more' | t
+    } only %}
+  </div>
+</article>

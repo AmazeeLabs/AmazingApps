@@ -1,0 +1,15 @@
+.teaser {
+  display: flex;
+}
+
+.teaser img {
+  margin-right: 1em;
+}
+
+.teaser h3 {
+  margin: 0;
+}
+
+.teaser .date {
+  margin: 0;
+}

@@ -1,0 +1,49 @@
+label: Page examples
+context: &default
+  header: '@header'
+  component: '#page'
+  content: '@page'
+  footer: '@footer'
+
+variants:
+  - name: Article
+    context:
+      <<: *default
+      component: '#article'
+      content: '@article'
+
+  - name: Job offer
+    context:
+      <<: *default
+      component: '#job'
+      content: '@job'
+
+  - name: Team member
+    context:
+      <<: *default
+      component: '#team-member'
+      content: '@team-member'
+
+  - name: Jobs
+    context:
+      <<: *default
+      component: '#jobs'
+      content: '@jobs'
+
+  - name: Team
+    context:
+      <<: *default
+      component: '#team'
+      content: '@team'
+
+  - name: Blog
+    context:
+      <<: *default
+      component: '#blog'
+      content: '@blog'
+
+  - name: Home
+    context:
+      <<: *default
+      component: '#home'
+      content: '@home'

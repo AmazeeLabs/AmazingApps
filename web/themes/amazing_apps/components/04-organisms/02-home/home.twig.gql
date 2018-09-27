@@ -1,0 +1,30 @@
+fragment HomePage on Query {
+
+  jobs:nodeQuery(filter: {conditions: [
+    {field: "type", value: "job_offer"},
+    {field: "status", value: "1"}
+  ]}) {
+    teasers:entities {
+      ...Teaser
+    }
+  }
+
+  articles:nodeQuery(filter: {conditions: [
+    {field: "type", value: "article"},
+    {field: "status", value: "1"}
+  ]}) {
+    teasers:entities {
+      ...Teaser
+    }
+  }
+
+  experts:nodeQuery(filter: {conditions: [
+    {field: "type", value: "team_member"},
+    {field: "status", value: "1"}
+  ]}) {
+    teasers:entities {
+      ...Teaser
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+fragment TeamListing on Query {
+  members:nodeQuery(filter: {conditions: [
+    {field: "type", value: "team_member"},
+    {field: "status", value: "1"}
+  ]}) {
+    teasers:entities {
+      ...Teaser
+    }
+  }
+}

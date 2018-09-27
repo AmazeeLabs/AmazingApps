@@ -1,0 +1,4 @@
+label: Job listing
+context:
+  jobs:
+    teasers: '@teaser-list.teasers'

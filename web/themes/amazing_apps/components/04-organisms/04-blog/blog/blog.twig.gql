@@ -1,0 +1,10 @@
+fragment BlogListing on Query {
+  articles:nodeQuery(filter: {conditions: [
+    {field: "type", value: "article"},
+    {field: "status", value: "1"}
+  ]}) {
+    teasers:entities {
+      ...Teaser
+    }
+  }
+}

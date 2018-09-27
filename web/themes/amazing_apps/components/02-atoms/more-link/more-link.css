@@ -1,0 +1,14 @@
+.more-link {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.more-link:after {
+  content: '»';
+  margin-left: 0.5em;
+}
+
+.more-link:hover,
+.more-link:focus {
+  text-decoration: underline;
+}

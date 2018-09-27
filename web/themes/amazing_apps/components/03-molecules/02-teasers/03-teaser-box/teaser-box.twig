@@ -1,0 +1,9 @@
+<aside class="teaser-box theme-{{ theme }}">
+  <h2>{{ title }}</h2>
+  {% include '#teaser-list' with { teasers: teasers } only %}
+  {% include '#more-link' with {
+    text: 'Show all' | t,
+    title: 'Show all' | t,
+    url: url
+  } only %}
+</aside>

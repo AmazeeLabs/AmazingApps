@@ -1,0 +1,35 @@
+fragment Article on NodeArticle {
+  title:entityLabel
+  date:entityCreated
+
+  text:body {
+    processed
+  }
+
+  hero:fieldImage {
+    alt
+    image:derivative(style: LANDSCAPE) {
+      url
+      width
+      height
+    }
+  }
+
+  experts:relatedTeamMembers {
+    teasers:results {
+      ... Teaser
+    }
+  }
+
+  jobs:relatedJobs {
+    teasers:results {
+      ... Teaser
+    }
+  }
+
+  articles:relatedArticles {
+    teasers:results {
+      ... Teaser
+    }
+  }
+}

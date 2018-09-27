@@ -1,0 +1,4 @@
+label: Blog listing
+context:
+  articles:
+    teasers: '@teaser-list.teasers'

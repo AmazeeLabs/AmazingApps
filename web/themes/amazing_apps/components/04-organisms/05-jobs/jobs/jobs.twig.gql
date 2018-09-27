@@ -1,0 +1,10 @@
+fragment JobListing on Query {
+  jobs:nodeQuery(filter: {conditions: [
+    {field: "type", value: "job_offer"},
+    {field: "status", value: "1"}
+  ]}) {
+    teasers:entities {
+      ...Teaser
+    }
+  }
+}

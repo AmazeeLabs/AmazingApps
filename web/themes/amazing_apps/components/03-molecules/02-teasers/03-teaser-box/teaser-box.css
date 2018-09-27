@@ -1,0 +1,12 @@
+.teaser-box {
+  padding: 1em;
+  border-radius: 20px;
+}
+
+.teaser-box > h2 {
+  margin-top: 0;
+}
+
+.teaser-box .teaser-list {
+  font-size: 0.8em;
+}

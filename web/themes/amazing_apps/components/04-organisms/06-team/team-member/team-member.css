@@ -1,0 +1,16 @@
+.team-member {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 2fr;
+}
+
+.team-member .title {
+  margin-top: 0;
+}
+
+.team-member__related {
+  margin-top: 2em;
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+}

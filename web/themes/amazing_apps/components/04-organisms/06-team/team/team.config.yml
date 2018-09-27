@@ -1,0 +1,4 @@
+label: Team listing
+context:
+  members:
+    teasers: '@teaser-list.teasers'

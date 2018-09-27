@@ -1,0 +1,31 @@
+<div class="home">
+  {% include '#title' with { title: 'Welcome to <em>Amazing Apps!</em>' | t } %}
+  <p><em>{{ 'We totally build amazing apps!' | t }}</em></p>
+</div>
+
+{% set boxes %}
+  {% include '#teaser-box' with {
+    theme: 'black',
+    title: 'Experts' | t,
+    teasers: experts.teasers,
+    url: '/team'
+  } only %}
+
+  {% include '#teaser-box' with {
+    theme: 'yellow',
+    title: 'Job openings' | t,
+    teasers: jobs.teasers,
+    url: '/jobs'
+  } only %}
+
+  {% include '#teaser-box' with {
+    theme: 'white',
+    title: 'From our blog' | t,
+    teasers: articles.teasers,
+    url: '/blog'
+  } only %}
+{% endset %}
+
+{% embed '#grid' with { columns: 3 } %}
+  {% block items %}{{ boxes }}{% endblock %}
+{% endembed %}

@@ -1,0 +1,16 @@
+label: Article
+context:
+  title: '@headline.text'
+  text:
+    processed: '@text.formatted'
+  hero:
+    alt: A placeholder
+    image:
+      url: 'https://via.placeholder.com/1200x400'
+      width: 2000
+      height: 800
+
+  articles: { teasers: '@teaser-box.teasers' }
+  jobs: { teasers: '@teaser-box.teasers' }
+  experts: { teasers: '@teaser-box.teasers' }
+

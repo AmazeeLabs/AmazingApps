@@ -1,0 +1,9 @@
+label: Job offer
+context:
+  title: '@headline.text'
+  text:
+    processed: '@text.formatted'
+
+  articles: { teasers: '@teaser-box.teasers' }
+  jobs: { teasers: '@teaser-box.teasers' }
+  experts: { teasers: '@teaser-box.teasers' }

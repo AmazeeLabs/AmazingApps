@@ -1,0 +1,27 @@
+fragment Teaser on Node {
+  title:entityLabel
+  date:entityCreated
+  url:entityUrl {
+    path
+  }
+  ... on NodeTeamMember {
+    thumbnail:fieldImage {
+      alt
+      image:derivative(style: THUMBNAIL) {
+        url
+        width
+        height
+      }
+    }
+  }
+  ... on NodeArticle {
+    thumbnail:fieldImage {
+      alt
+      image:derivative(style: THUMBNAIL) {
+        url
+        width
+        height
+      }
+    }
+  }
+}

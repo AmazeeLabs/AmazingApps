@@ -1,0 +1,6 @@
+fragment Page on NodePage {
+  title:entityLabel
+  text:body {
+    processed
+  }
+}

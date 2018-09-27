@@ -1,0 +1,13 @@
+.teaser-list {
+  list-style: none;
+  padding: 0;
+}
+
+.teaser-list > li {
+  padding-top: 1em;
+}
+
+.teaser-list > li:not(:last-child) {
+  border-bottom: 1px dashed var(--color-text);
+  padding-bottom: 1em;
+}
