@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+
+.layout-page__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.layout-page > div {
+  padding: 1em;
+}
+
+.layout-page > .layout-page__content {
+  padding-bottom: 4em;
+}
+
+.layout-page > .layout-page__footer {
+  padding-bottom: 4em;
+}
