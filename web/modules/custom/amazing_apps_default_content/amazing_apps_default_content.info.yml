@@ -1,0 +1,40 @@
+name: AmazingApps default content
+type: module
+description: 'Content that expresses our feelings.'
+package: AmazingApps
+core: 8.x
+dependencies:
+- default_content
+- better_normalizers
+default_content:
+  node:
+  - d19e11b2-b5b3-4a3f-90f4-992042f02e1d
+  - dc15ed0b-04db-419c-8702-19dc9d663982
+  - 6487a259-68a1-4ea7-9888-93c19d0ff46c
+  - f6fd842e-1b3a-4749-83a7-0f3e130d315a
+  - ebc5dca4-e6cc-4790-995b-376065d4ee70
+  - 3dd20e21-a9d4-4fbc-a861-3b06c3e2aac9
+  - a39b7706-aa4d-410e-826a-596d1454aeef
+  - 62d3c46a-85f7-4153-a867-097f5c5eeb84
+  - 36f11e75-b4b5-4b3b-a05c-933d65ffd201
+  menu_link_content:
+  - f43360f5-b44a-4e38-873c-216fc510a18c
+  - 43956f10-dab2-48e1-b4d8-af13430b3aef
+  - 2acc3b7c-b698-420b-b5be-06d5b92238b7
+  - 43c12442-84a5-4dc1-874f-37c1182973b0
+  - 8f5be546-22a9-4a57-950e-f578633c062b
+  taxonomy_term:
+  - 92920b56-9a4d-4156-8933-68f65fa65020
+  - 7dff3eac-64d1-41e5-8cf6-2e58d29d040b
+  - cab9f825-6813-4940-9a45-32496e059a55
+  - 6695bbcf-1e99-4e8e-b94d-3aac381a8830
+  - 6ba65fa2-597c-4e8c-87ff-77a58f5abfdc
+  - 3f175ea9-76b4-44e6-9d67-06b9544ad25b
+  file:
+  - 90434f50-929e-454c-8334-9aa332668cc4
+  - 83d0438a-3ae9-48a9-b4b0-769178faa03c
+  - 16925dd4-d963-4670-8ba6-29190ef9a62b
+  - 345c8b0a-ca71-42b4-8893-069274c8a440
+  - 103ac985-a84c-4bf2-97d6-1f8713653a0e
+  - 25e94fc1-2529-47e3-91f4-b5bae9ee9e78
+

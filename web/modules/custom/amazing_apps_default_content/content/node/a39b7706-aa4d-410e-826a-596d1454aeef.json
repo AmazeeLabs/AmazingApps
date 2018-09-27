@@ -1,0 +1,229 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/localhost:8888\/node\/7?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/node\/team_member"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/revision_uid": [
+            {
+                "href": "http:\/\/localhost:8888\/user\/1?_format=hal_json"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/uid": [
+            {
+                "href": "http:\/\/localhost:8888\/user\/1?_format=hal_json",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/field_image": [
+            {
+                "href": "http:\/\/localhost:8888\/sites\/default\/files\/2018-09\/harry_4.jpg",
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/field_tags": [
+            {
+                "href": "http:\/\/localhost:8888\/taxonomy\/term\/5?_format=hal_json",
+                "lang": "en"
+            },
+            {
+                "href": "http:\/\/localhost:8888\/taxonomy\/term\/6?_format=hal_json",
+                "lang": "en"
+            }
+        ]
+    },
+    "nid": [
+        {
+            "value": 7
+        }
+    ],
+    "uuid": [
+        {
+            "value": "a39b7706-aa4d-410e-826a-596d1454aeef"
+        }
+    ],
+    "vid": [
+        {
+            "value": 42
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "team_member"
+        }
+    ],
+    "revision_timestamp": [
+        {
+            "value": "2018-09-27T13:41:55+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/revision_uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/localhost:8888\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b2be48f2-b263-46c7-8d85-8acc42541b27"
+                    }
+                ]
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/localhost:8888\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "b2be48f2-b263-46c7-8d85-8acc42541b27"
+                    }
+                ],
+                "lang": "en"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/field_image": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/localhost:8888\/sites\/default\/files\/2018-09\/harry_4.jpg"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/file\/file"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "83d0438a-3ae9-48a9-b4b0-769178faa03c"
+                    }
+                ],
+                "lang": "en",
+                "alt": "Isn't he just hilarious?",
+                "title": "",
+                "width": "2000",
+                "height": "1333"
+            }
+        ],
+        "http:\/\/drupal.org\/rest\/relation\/node\/team_member\/field_tags": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/localhost:8888\/taxonomy\/term\/5?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "6ba65fa2-597c-4e8c-87ff-77a58f5abfdc"
+                    }
+                ],
+                "lang": "en"
+            },
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/localhost:8888\/taxonomy\/term\/6?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/taxonomy_term\/tags"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "3f175ea9-76b4-44e6-9d67-06b9544ad25b"
+                    }
+                ],
+                "lang": "en"
+            }
+        ]
+    },
+    "status": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "title": [
+        {
+            "value": "Hilarious Harry",
+            "lang": "en"
+        }
+    ],
+    "created": [
+        {
+            "value": "2018-09-26T14:38:13+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-09-27T13:41:55+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "promote": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "sticky": [
+        {
+            "value": false,
+            "lang": "en"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "revision_translation_affected": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ],
+    "path": [
+        {
+            "alias": null,
+            "pid": null,
+            "langcode": "en",
+            "lang": "en"
+        }
+    ],
+    "body": [
+        {
+            "value": "<p>There he comes. This is your creation - and it's just as unique and special as you are. We'll put some happy little leaves here and there. It looks so good, I might as well not stop.<\/p>\r\n\r\n<p>We'll throw some happy little limbs on this tree. Don't fight it, use what happens. These things happen automatically. All you have to do is just let them happen.<\/p>\r\n\r\n<p>If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. Let's have a nice tree right here. Everyone wants to enjoy the good parts - but you have to build the framework first. Let your heart take you to wherever you want to be.<\/p>\r\n\r\n<p>A big strong tree needs big strong roots. I'm sort of a softy, I couldn't shoot Bambi except with a camera. Just a little indication. You can bend rivers. But when I get home, the only thing I have power over is the garbage. In your imagination you can go anywhere you want. Don't be bashful drop me a line.<\/p>\r\n",
+            "format": "basic_html",
+            "processed": "<p>There he comes. This is your creation - and it's just as unique and special as you are. We'll put some happy little leaves here and there. It looks so good, I might as well not stop.<\/p>\n\n<p>We'll throw some happy little limbs on this tree. Don't fight it, use what happens. These things happen automatically. All you have to do is just let them happen.<\/p>\n\n<p>If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. Let's have a nice tree right here. Everyone wants to enjoy the good parts - but you have to build the framework first. Let your heart take you to wherever you want to be.<\/p>\n\n<p>A big strong tree needs big strong roots. I'm sort of a softy, I couldn't shoot Bambi except with a camera. Just a little indication. You can bend rivers. But when I get home, the only thing I have power over is the garbage. In your imagination you can go anywhere you want. Don't be bashful drop me a line.<\/p>",
+            "summary": "",
+            "lang": "en"
+        }
+    ]
+}
