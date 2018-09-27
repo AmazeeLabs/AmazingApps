@@ -9,3 +9,20 @@ regions:
 
 libraries:
 - amazing_apps/fractal
+
+routes:
+  home:
+    path: '/home'
+    title: 'Amazing Apps'
+
+  blog:
+    path: '/blog'
+    title: 'Blog'
+
+  team:
+    path: '/team'
+    title: 'Team'
+
+  jobs:
+    path: '/jobs'
+    title: 'Jobs'
