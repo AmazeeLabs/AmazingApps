@@ -8,6 +8,13 @@ This is an example repository for learning to build websites with Drupal, GraphQ
 * Composer
 * Node
 
+## Getting Started
+
+```bash
+git clone git@github.com:AmazeeLabs/AmazingApps.git amazing-apps
+cd amazing-apps
+```
+
 ## Fractal
 
 ```bash
@@ -18,9 +25,8 @@ npm run dev
 ... and visit `http://localhost:3000` in your browser.
 
 ## Drupal
+
 ```bash
-git clone git@github.com:AmazeeLabs/AmazingApps.git amazing-apps
-cd amazing-apps
 composer install
 ./vendor/bin/drush si minimal --config-dir=../config/sync --account-name=admin --account-pass=admin
 php web/core/scripts/drupal quick-start
