@@ -3,17 +3,18 @@ class Collapsible extends HTMLElement {
         super();
         let collapsed = true;
 
+        this.attachShadow({mode: 'open'});
+
         const contentWrapper = this.ownerDocument.createElement('div');
         contentWrapper.style.display = 'none';
-        this.append(contentWrapper);
+        this.shadowRoot.append(contentWrapper);
 
-        while (this.firstChild !== contentWrapper) {
-            contentWrapper.appendChild(this.firstChild);
-        }
+        const slot = this.ownerDocument.createElement('slot');
+        contentWrapper.append(slot);
 
         const toggle = this.ownerDocument.createElement('button');
         toggle.innerText = 'Open';
-        this.prepend(toggle);
+        this.shadowRoot.prepend(toggle);
 
         toggle.addEventListener('click', () => {
             collapsed = !collapsed;
