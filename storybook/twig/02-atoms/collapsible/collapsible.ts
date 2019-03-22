@@ -1,27 +1,28 @@
-class Collapsible extends HTMLElement {
+import {customElement, LitElement, html, TemplateResult} from "lit-element";
+
+@customElement('aa-collapsible')
+class Collapsible extends LitElement {
+
+    static get properties() {
+        return {
+            collapsed: { attribute: 'collapsed', type: Boolean, reflect: true }
+        }
+    }
+
     constructor() {
         super();
-        let collapsed = true;
+    }
 
-        this.attachShadow({mode: 'open'});
+    protected render(): TemplateResult | void {
+        return html`
+            <button @click=${this.toggle}>${this.collapsed ? 'Open' : 'Close'}</button>
+            <div style="display: ${this.collapsed ? 'none' : 'block'}">\
+              <slot></slot>
+            </div>
+        `;
+    }
 
-        const contentWrapper = this.ownerDocument.createElement('div');
-        contentWrapper.style.display = 'none';
-        this.shadowRoot.append(contentWrapper);
-
-        const slot = this.ownerDocument.createElement('slot');
-        contentWrapper.append(slot);
-
-        const toggle = this.ownerDocument.createElement('button');
-        toggle.innerText = 'Open';
-        this.shadowRoot.prepend(toggle);
-
-        toggle.addEventListener('click', () => {
-            collapsed = !collapsed;
-            toggle.innerText = collapsed ? 'Open' : 'Close';
-            contentWrapper.style.display = collapsed ? 'none' : 'block';
-        });
+    toggle() {
+        this.collapsed = !this.collapsed;
     }
 }
-
-window.customElements.define('aa-collapsible', Collapsible);
