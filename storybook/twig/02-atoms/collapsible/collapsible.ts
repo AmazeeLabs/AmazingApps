@@ -1,4 +1,4 @@
-import {customElement, LitElement, html, TemplateResult} from "lit-element";
+import {customElement, LitElement, html, TemplateResult, css } from "lit-element";
 
 @customElement('aa-collapsible')
 class Collapsible extends LitElement {
@@ -7,6 +7,25 @@ class Collapsible extends LitElement {
         return {
             collapsed: { attribute: 'collapsed', type: Boolean, reflect: true }
         }
+    }
+
+    static get styles() {
+        return css`
+            :host {
+              display: block;
+              position: relative;
+              padding: 1em;
+              border: 1px solid red;
+            }
+            
+            button {
+              position: absolute;
+              top: 0;
+              right: 0;
+              background: lime;
+              border: none;
+            }
+        `;
     }
 
     constructor() {
