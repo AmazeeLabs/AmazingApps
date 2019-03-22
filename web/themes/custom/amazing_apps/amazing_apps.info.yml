@@ -1,0 +1,27 @@
+name: Amazing Apps
+type: theme
+description: 'Amazing theme for an amazing company website.'
+package: Core
+version: VERSION
+base theme: storybook
+core: 8.x
+
+regions:
+  content: 'Content'
+
+routes:
+  home:
+    path: '/home'
+    title: 'Amazing Apps'
+
+  blog:
+    path: '/blog'
+    title: 'Blog'
+
+  team:
+    path: '/team'
+    title: 'Team'
+
+  jobs:
+    path: '/jobs'
+    title: 'Jobs'

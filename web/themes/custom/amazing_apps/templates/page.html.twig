@@ -1,0 +1,19 @@
+{#graphql
+query {
+  ...Header
+  ...Footer
+}
+#}
+{% extends '@storybook/05-layouts/page-layout/page-layout.twig' %}
+
+{% block header %}
+  {% include '@storybook/04-organisms/01-layout/01-header/header.twig' with graphql only %}
+{% endblock %}
+
+{% block content %}
+  {{ page.content }}
+{% endblock %}
+
+{% block footer %}
+  {% include '@storybook/04-organisms/01-layout/02-footer/footer.twig' with graphql only %}
+{% endblock %}

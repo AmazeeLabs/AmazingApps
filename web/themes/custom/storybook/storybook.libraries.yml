@@ -1,0 +1,7 @@
+storybook:
+  version: VERSION
+  js:
+    dist/scripts.js: { preprocess: true }
+  css:
+    component:
+      dist/styles.css: { preprocess: true }

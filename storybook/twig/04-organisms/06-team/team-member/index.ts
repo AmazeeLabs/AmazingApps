@@ -1,0 +1,1 @@
+import './team-member.css';

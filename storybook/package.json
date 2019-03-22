@@ -1,0 +1,43 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -c .storybook -o build",
+    "build-library": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@storybook/addon-a11y": "^5.0.3",
+    "@storybook/addon-actions": "^5.0.1",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-notes": "^5.0.3",
+    "@storybook/addon-viewport": "^5.0.1",
+    "@storybook/html": "^5.0.1",
+    "@types/node": "^11.11.4",
+    "@webcomponents/webcomponentsjs": "^2.2.7",
+    "babel-loader": "^8.0.5",
+    "core-js": "2",
+    "file-loader": "^3.0.1",
+    "lit-element": "^2.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-url": "^8.0.0",
+    "resolve-url-loader": "^3.0.1",
+    "twig": "^1.13.2",
+    "twig-drupal-filters": "^2.0.0",
+    "twig-loader": "https://github.com/AmazeeLabs/twig-loader.git",
+    "typescript": "^3.3.3333",
+    "url-loader": "^1.1.2",
+    "webpack-cli": "^3.2.3"
+  }
+}

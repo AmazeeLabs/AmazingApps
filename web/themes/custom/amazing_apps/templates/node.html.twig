@@ -1,0 +1,26 @@
+{#graphql
+query ($node: String!) {
+  node:nodeById(id: $node) {
+    type:__typename
+    ...Page
+    ...Article
+    ...TeamMember
+    ...Job
+  }
+}
+#}
+{% if graphql.node.type == 'NodePage'%}
+  {% include '@storybook/04-organisms/03-page/page.twig' with graphql.node %}
+{% endif %}
+
+{% if graphql.node.type == 'NodeArticle'%}
+  {% include '@storybook/04-organisms/04-blog/article/article.twig' with graphql.node %}
+{% endif %}
+
+{% if graphql.node.type == 'NodeTeamMember'%}
+  {% include '@storybook/04-organisms/06-team/team-member/team-member.twig' with graphql.node %}
+{% endif %}
+
+{% if graphql.node.type == 'NodeJobOffer'%}
+  {% include '@storybook/04-organisms/05-jobs/job/job.twig' with graphql.node %}
+{% endif %}

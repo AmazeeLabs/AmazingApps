@@ -1,0 +1,23 @@
+{
+  "name": "silverback",
+  "version": "1.0.0",
+  "description": "This project is based on silverback. Please refer to [SILVERBACK.md](SILVERBACK.md) for further information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmazeeLabs/silverback.git"
+  },
+  "author": "Philipp Melab",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/AmazeeLabs/silverback/issues"
+  },
+  "homepage": "https://github.com/AmazeeLabs/silverback#readme",
+  "dependencies": {
+    "cypress": "^3.1.4",
+    "cypress-cucumber-preprocessor": "^1.9.1"
+  }
+}

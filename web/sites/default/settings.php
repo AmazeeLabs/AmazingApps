@@ -280,7 +280,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'LBdYqND-QV_XWX0XM_t1sSLssiDrIzGkTumdH19DpMJk8skXD0eANmISOSuW7JAcalctMHMIjw';
+$settings['hash_salt'] = getenv('DRUPAL_HASH_SALT') ?: 'silverback';
 
 /**
  * Deployment identifier.
@@ -765,15 +765,10 @@ $settings['entity_update_batch_size'] = 50;
  * Keep this code block at the end of this file to take full effect.
  */
 
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}
-
 $config_directories['sync'] = '../config/sync';
-
-$databases['default']['default'] = array (
-  'database' => 'sites/default/files/.sqlite',
-  'prefix' => '',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
-  'driver' => 'sqlite',
-);
+if ($env = getenv('SB_ENVIRONMENT')) {
+  $env_settings = $app_root . '/' . $site_path . '/settings.' . $env . '.php';
+  if (file_exists($env_settings)) {
+    include $env_settings;
+  }
+}

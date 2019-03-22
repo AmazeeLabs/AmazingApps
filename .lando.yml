@@ -1,0 +1,4 @@
+name: amazing-apps
+recipe: drupal8
+config:
+  webroot: web

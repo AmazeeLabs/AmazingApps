@@ -1,5 +1,0 @@
-fractal:
-  version: VERSION
-  css:
-    component:
-      dist/styles.css: { preprocess: true }

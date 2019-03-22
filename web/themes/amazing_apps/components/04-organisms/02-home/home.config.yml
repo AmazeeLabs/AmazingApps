@@ -1,5 +1,0 @@
-label: Homepage
-context:
-  articles: { teasers: '@teaser-box.teasers' }
-  jobs: { teasers: '@teaser-box.teasers' }
-  experts: { teasers: '@teaser-box.teasers' }

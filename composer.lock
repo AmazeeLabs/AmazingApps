@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11e7e18797dd29793742e4afd82f9b5b",
+    "content-hash": "8f40d18458bb648e6ff4c03b897e39be",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -69,6 +69,72 @@
                 "zip"
             ],
             "time": "2016-11-03T16:10:31+00:00"
+        },
+        {
+            "name": "amazeelabs/silverback",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AmazeeLabs/silverback.git",
+                "reference": "7936f238f23cddf1407baf58182c357f953ff035"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AmazeeLabs/silverback/zipball/7936f238f23cddf1407baf58182c357f953ff035",
+                "reference": "7936f238f23cddf1407baf58182c357f953ff035",
+                "shasum": ""
+            },
+            "require": {
+                "cweagans/composer-patches": "^1.6.5",
+                "drupal/admin_toolbar": "^1",
+                "drupal/ckeditor5_sections": "^1.0-alpha",
+                "drupal/components": "1.1-alpha2",
+                "drupal/console": "^1.0.2",
+                "drupal/core": "^8.6.0",
+                "drupal/entity_usage": "^2.0@alpha",
+                "drupal/graphql": "^3.0@RC",
+                "drupal/graphql_twig": "^1.0@beta",
+                "drupal/graphql_views": "^1.0@beta",
+                "drupal/linkit": "^5",
+                "drupal/moderation_state_buttons_widget": "dev-1.x",
+                "drupal/moderation_state_columns": "dev-1.x",
+                "drupal/moderation_state_permissions": "dev-1.x",
+                "drupal/redirect": "^1.2",
+                "drupal/tmgmt": "^1.6",
+                "drupal/user_reference_access": "dev-1.x",
+                "drupal/webpack_react": "dev-1.x",
+                "drush/drush": "^9.0.0",
+                "vlucas/phpdotenv": "^2.4",
+                "wikimedia/composer-merge-plugin": "^1.4"
+            },
+            "bin": [
+                "bin/silverback"
+            ],
+            "type": "package",
+            "extra": {
+                "patches": {
+                    "drupal/core": {
+                        "#2718657 - Drupal\\language\\LanguageNegotiator::updateConfiguration() is passed a NULL": "https://www.drupal.org/files/issues/2019-02-28/language-2718657-17.patch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AmazeeLabs\\Silverback\\": "src/AmazeeLabs/Silverback"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Philipp Melab<philipp.melab@gmail.com>",
+                    "role": "Master of desaster"
+                }
+            ],
+            "description": "Scaffolder for Amazee Silverback projects.",
+            "time": "2019-03-21T13:11:16+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -1710,21 +1776,21 @@
             "time": "2018-07-27T10:07:07+00:00"
         },
         {
-            "name": "drupal/better_normalizers",
-            "version": "1.0.0-beta3",
+            "name": "drupal/admin_toolbar",
+            "version": "1.26.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/better_normalizers",
-                "reference": "8.x-1.0-beta3"
+                "url": "https://git.drupal.org/project/admin_toolbar",
+                "reference": "8.x-1.26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_normalizers-8.x-1.0-beta3.zip",
-                "reference": "8.x-1.0-beta3",
-                "shasum": "876c5f0006c3764677e1dbe6dec60a32d5a2d636"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.26.zip",
+                "reference": "8.x-1.26",
+                "shasum": "7be9f91008bf17cf49b43d1c8e2211e7a8e40ce4"
             },
             "require": {
-                "drupal/core": "^8.3"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -1732,8 +1798,90 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta3",
-                    "datestamp": "1493796785",
+                    "version": "8.x-1.26",
+                    "datestamp": "1549559402",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Wilfrid Roze (eme)",
+                    "homepage": "https://www.drupal.org/u/eme",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Romain Jarraud (romainj)",
+                    "homepage": "https://www.drupal.org/u/romainj",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Adrian Cid Almaguer (adriancid)",
+                    "homepage": "https://www.drupal.org/u/adriancid",
+                    "email": "adriancid@gmail.com",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mohamed Anis Taktak (matio89)",
+                    "homepage": "https://www.drupal.org/u/matio89",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "fethi.krout",
+                    "homepage": "https://www.drupal.org/user/3206765"
+                },
+                {
+                    "name": "matio89",
+                    "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "romainj",
+                    "homepage": "https://www.drupal.org/user/370706"
+                }
+            ],
+            "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
+            "homepage": "http://drupal.org/project/admin_toolbar",
+            "keywords": [
+                "Drupal",
+                "Toolbar"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/admin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/ckeditor5_sections",
+            "version": "1.0.0-alpha13",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ckeditor5_sections",
+                "reference": "8.x-1.0-alpha13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor5_sections-8.x-1.0-alpha13.zip",
+                "reference": "8.x-1.0-alpha13",
+                "shasum": "1046bd0ab7aa74a65c5de07dda7d2a84a788888f"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/linkit": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha13",
+                    "datestamp": "1552484220",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1746,26 +1894,65 @@
             ],
             "authors": [
                 {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "andypost",
-                    "homepage": "https://www.drupal.org/user/118908"
-                },
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "larowlan",
-                    "homepage": "https://www.drupal.org/user/395439"
+                    "name": "pmelab",
+                    "homepage": "https://www.drupal.org/user/555322"
                 }
             ],
-            "description": "Improve the normalizers in core.",
-            "homepage": "https://www.drupal.org/project/better_normalizers",
+            "description": "Provides the Sections editor based on ckeditor5.",
+            "homepage": "https://www.drupal.org/project/ckeditor5_sections",
             "support": {
-                "source": "http://cgit.drupalcode.org/better_normalizers"
+                "source": "http://cgit.drupalcode.org/ckeditor5_sections"
+            }
+        },
+        {
+            "name": "drupal/components",
+            "version": "1.1.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/components",
+                "reference": "8.x-1.1-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/components-8.x-1.1-alpha2.zip",
+                "reference": "8.x-1.1-alpha2",
+                "shasum": "bcb9ebdcbb56df10b7e2404156aab0fa8e9d9332"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1-alpha2",
+                    "datestamp": "1550161984",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                }
+            ],
+            "description": "Registers “component libraries” defined in modules and themes with the Twig system",
+            "homepage": "https://www.drupal.org/project/components",
+            "support": {
+                "source": "http://cgit.drupalcode.org/components"
             }
         },
         {
@@ -2237,6 +2424,9 @@
                     "recurse": false,
                     "replace": false,
                     "merge-extra": false
+                },
+                "patches_applied": {
+                    "#2718657 - Drupal\\language\\LanguageNegotiator::updateConfiguration() is passed a NULL": "https://www.drupal.org/files/issues/2019-02-28/language-2718657-17.patch"
                 }
             },
             "autoload": {
@@ -2263,30 +2453,38 @@
             "time": "2018-09-10T11:50:07+00:00"
         },
         {
-            "name": "drupal/default_content",
-            "version": "1.0.0-alpha7",
+            "name": "drupal/entity_usage",
+            "version": "2.0.0-alpha8",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/default_content",
-                "reference": "8.x-1.0-alpha7"
+                "url": "https://git.drupal.org/project/entity_usage",
+                "reference": "8.x-2.0-alpha8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/default_content-8.x-1.0-alpha7.zip",
-                "reference": "8.x-1.0-alpha7",
-                "shasum": "4f1b49cdad6d74ef879f4700caaa11703ba85ad7"
+                "url": "https://ftp.drupal.org/files/projects/entity_usage-8.x-2.0-alpha8.zip",
+                "reference": "8.x-2.0-alpha8",
+                "shasum": "577da1bf89d7520b07ba1af5be8553bac5ceb53f"
             },
             "require": {
-                "drupal/core": "~8.3"
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/dynamic_entity_reference": "~1.0",
+                "drupal/entity_embed": "~1.0",
+                "drupal/entity_reference_revisions": "~1.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/webform": "~5.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha7",
-                    "datestamp": "1508448545",
+                    "version": "8.x-2.0-alpha8",
+                    "datestamp": "1541781780",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -2299,38 +2497,22 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
+                    "name": "marcoscano",
+                    "homepage": "https://www.drupal.org/user/1288796"
                 },
                 {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "andypost",
-                    "homepage": "https://www.drupal.org/user/118908"
-                },
-                {
-                    "name": "benjy",
-                    "homepage": "https://www.drupal.org/user/1852732"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "jibran",
-                    "homepage": "https://www.drupal.org/user/1198144"
-                },
-                {
-                    "name": "larowlan",
-                    "homepage": "https://www.drupal.org/user/395439"
+                    "name": "seanB",
+                    "homepage": "https://www.drupal.org/user/545912"
                 }
             ],
-            "description": "Imports default content when a module is enabled",
-            "homepage": "https://www.drupal.org/project/default_content",
+            "description": "Track usage of entities referenced by other entities",
+            "homepage": "https://www.drupal.org/project/entity_usage",
+            "keywords": [
+                "Drupal"
+            ],
             "support": {
-                "source": "http://cgit.drupalcode.org/default_content"
+                "source": "http://cgit.drupalcode.org/entity_usage",
+                "issues": "http://drupal.org/project/issues/entity_usage"
             }
         },
         {
@@ -2481,17 +2663,17 @@
         },
         {
             "name": "drupal/graphql_views",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/graphql_views",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/graphql_views-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "65e1fc8176416ad58c14a828f551cda4eaa23723"
+                "url": "https://ftp.drupal.org/files/projects/graphql_views-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "b8b41f4d8dde2510f8e6a0ed7e8cd043fa896c92"
             },
             "require": {
                 "drupal/core": "*",
@@ -2503,8 +2685,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1537770780",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1542832980",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -2530,6 +2712,626 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/graphql_views"
             }
+        },
+        {
+            "name": "drupal/linkit",
+            "version": "5.0.0-beta8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/linkit",
+                "reference": "8.x-5.0-beta8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta8.zip",
+                "reference": "8.x-5.0-beta8",
+                "shasum": "677be19d6128f1d5c6d239132e98b1817ad91acb"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/imce": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-5.x": "5.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-5.0-beta8",
+                    "datestamp": "1545966784",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Emil Stjerneman",
+                    "homepage": "https://stjerneman.com",
+                    "email": "emil@stjerneman.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Linkit - Enriched linking experience",
+            "homepage": "http://drupal.org/project/linkit",
+            "support": {
+                "source": "http://cgit.drupalcode.org/linkit",
+                "issues": "http://drupal.org/project/linkit"
+            }
+        },
+        {
+            "name": "drupal/moderation_state_buttons_widget",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/moderation_state_buttons_widget",
+                "reference": "8ea76ecbcb96ac5fdb428ead8cf0d184a8709138"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3+0-dev",
+                    "datestamp": "1550846285",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "blazey",
+                    "homepage": "https://www.drupal.org/user/353861"
+                }
+            ],
+            "description": "Provides a widget for moderation states that shows them as buttons.",
+            "homepage": "https://www.drupal.org/project/moderation_state_buttons_widget",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/moderation_state_buttons_widget",
+                "issues": "https://www.drupal.org/project/issues/moderation_state_buttons_widget"
+            },
+            "time": "2019-02-26T16:12:13+00:00"
+        },
+        {
+            "name": "drupal/moderation_state_columns",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/moderation_state_columns",
+                "reference": "b58946eab880bf88fec522cc849a538d70dac121"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/webpack_react": "*",
+                "ext-json": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1540924681",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "blazey",
+                    "homepage": "https://www.drupal.org/user/353861"
+                }
+            ],
+            "description": "Provides a view display that shows moderation states as columns.",
+            "homepage": "https://www.drupal.org/project/moderation_state_columns",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/moderation_state_columns",
+                "issues": "https://www.drupal.org/project/issues/moderation_state_columns"
+            },
+            "time": "2018-11-02T19:25:21+00:00"
+        },
+        {
+            "name": "drupal/moderation_state_permissions",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/moderation_state_permissions",
+                "reference": "c5db93e3e7e01dd1910136bcbb13ac831eb08dc8"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1+0-dev",
+                    "datestamp": "1540567084",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "blazey",
+                    "homepage": "https://www.drupal.org/user/353861"
+                }
+            ],
+            "description": "Adds entity edit permissions based on their moderation states.",
+            "homepage": "https://www.drupal.org/project/moderation_state_permissions",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/moderation_state_permissions",
+                "issues": "https://www.drupal.org/project/issues/moderation_state_permissions"
+            },
+            "time": "2018-10-26T15:15:03+00:00"
+        },
+        {
+            "name": "drupal/npm",
+            "version": "1.0.0-alpha9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/npm",
+                "reference": "8.x-1.0-alpha9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/npm-8.x-1.0-alpha9.zip",
+                "reference": "8.x-1.0-alpha9",
+                "shasum": "225d1ac5dcc5945cd093596dae5bf48da0476358"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "symfony/process": ">2.8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha9",
+                    "datestamp": "1550829184",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\npm\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides npm actions, e.g. require a package, run script, etc.",
+            "homepage": "https://www.drupal.org/project/npm",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/npm",
+                "issues": "https://www.drupal.org/project/issues/npm"
+            }
+        },
+        {
+            "name": "drupal/redirect",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/redirect",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/redirect-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "3f9620d186e25f36ac56755979932b8ea965b8c7"
+            },
+            "require": {
+                "drupal/core": "~8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1539682684",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "pifagor",
+                    "homepage": "https://www.drupal.org/user/2375692"
+                }
+            ],
+            "description": "Allows users to redirect from old URLs to new URLs.",
+            "homepage": "https://www.drupal.org/project/redirect",
+            "support": {
+                "source": "http://cgit.drupalcode.org/redirect"
+            }
+        },
+        {
+            "name": "drupal/tmgmt",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/tmgmt",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tmgmt-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "23c4b1d253819759f0f805443e32b5382e88dce5"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/metatag": "1.x-dev",
+                "drupal/pathauto": "1.x-dev",
+                "drupal/tmgmt_content": "*",
+                "drupal/tmgmt_file": "*",
+                "drupal/tmgmt_language_combination": "*",
+                "drupal/tmgmt_local": "*",
+                "drupal/tmgmt_locale": "*",
+                "drupal/webform": "^5.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1550692533",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Schnitzel",
+                    "homepage": "https://www.drupal.org/user/643820"
+                },
+                {
+                    "name": "cgalli",
+                    "homepage": "https://www.drupal.org/user/77453"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/66163"
+                },
+                {
+                    "name": "fubhy",
+                    "homepage": "https://www.drupal.org/user/761344"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                },
+                {
+                    "name": "webflo",
+                    "homepage": "https://www.drupal.org/user/254778"
+                }
+            ],
+            "description": "Translation Management Tool",
+            "homepage": "https://www.drupal.org/project/tmgmt",
+            "support": {
+                "source": "http://cgit.drupalcode.org/tmgmt"
+            }
+        },
+        {
+            "name": "drupal/user_reference_access",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/user_reference_access",
+                "reference": "226f011471bf44c275851d84828aa4bd5fbd7bef"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1+0-dev",
+                    "datestamp": "1541510881",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "blazey",
+                    "homepage": "https://www.drupal.org/user/353861"
+                }
+            ],
+            "description": "Adds an ability to limit the set of users that can be referenced to only those that can perform selected actions.",
+            "homepage": "https://www.drupal.org/project/user_reference_access",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/user_reference_access",
+                "issues": "https://www.drupal.org/project/issues/user_reference_access"
+            },
+            "time": "2018-11-06T13:27:18+00:00"
+        },
+        {
+            "name": "drupal/webpack",
+            "version": "1.0.0-alpha12",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webpack",
+                "reference": "8.x-1.0-alpha12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webpack-8.x-1.0-alpha12.zip",
+                "reference": "8.x-1.0-alpha12",
+                "shasum": "d02b1e64f1c506043d5bdddcc680ad295f172487"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/npm": "*",
+                "drush/drush": "^9",
+                "ext-json": "*",
+                "php": "^5.6 || ^7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha12",
+                    "datestamp": "1550828888",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\webpack\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides webpack for Drupal.",
+            "homepage": "https://www.drupal.org/project/webpack",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webpack",
+                "issues": "https://www.drupal.org/project/issues/webpack"
+            }
+        },
+        {
+            "name": "drupal/webpack_babel",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webpack_babel",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webpack_babel-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "bb58eb17dca8b7898c583236013b497db14f00f9"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webpack": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1539959881",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\webpack_babel\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides Babel configuration for the webpack module.",
+            "homepage": "https://www.drupal.org/project/webpack_babel",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webpack_babel",
+                "issues": "https://www.drupal.org/project/issues/webpack_babel"
+            }
+        },
+        {
+            "name": "drupal/webpack_react",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webpack_react",
+                "reference": "e19f09bcd6d495544162258a9e6b6d42517c11d3"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webpack": "*",
+                "drupal/webpack_babel": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2+0-dev",
+                    "datestamp": "1540399681",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\webpack_react\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides React configuration for the webpack module.",
+            "homepage": "https://www.drupal.org/project/webpack_react",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webpack_react",
+                "issues": "https://www.drupal.org/project/issues/webpack_react"
+            },
+            "time": "2018-10-19T14:43:50+00:00"
         },
         {
             "name": "drush/drush",
@@ -5615,6 +6417,55 @@
             "time": "2018-09-02T14:59:54+00:00"
         },
         {
+            "name": "wikimedia/composer-merge-plugin",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0.0",
+                "jakub-onderka/php-parallel-lint": "~0.8",
+                "phpunit/phpunit": "~4.8|~5.0",
+                "squizlabs/php_codesniffer": "~2.1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                },
+                "class": "Wikimedia\\Composer\\MergePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wikimedia\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bryan Davis",
+                    "email": "bd808@wikimedia.org"
+                }
+            ],
+            "description": "Composer plugin to merge multiple composer.json files",
+            "time": "2017-04-25T02:31:25+00:00"
+        },
+        {
             "name": "zendframework/zend-diactoros",
             "version": "1.8.6",
             "source": {
@@ -7184,6 +8035,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
@@ -8000,11 +8852,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/better_normalizers": 10,
-        "drupal/default_content": 15,
-        "drupal/graphql": 5,
-        "drupal/graphql_twig": 10,
-        "drupal/graphql_views": 10
+        "amazeelabs/silverback": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

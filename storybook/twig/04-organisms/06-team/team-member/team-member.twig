@@ -1,0 +1,26 @@
+<div class="team-member">
+  {% if portrait %}
+    {% include '@storybook/01-base/05-image/image.twig' with portrait only %}
+  {% endif %}
+  <div>
+    {% include '@storybook/02-atoms/title/title.twig'  with { title: name } only %}
+    {{ text.processed | raw }}
+
+    {% embed '@storybook/05-layouts/grid/grid.twig' with { columns: 2 } %}
+      {% block items %}
+        {% include '@storybook/03-molecules/02-teasers/03-teaser-box/teaser-box.twig' with {
+          theme: 'black',
+          title: 'Expertise' | t,
+          teasers: articles.teasers,
+          url: '/blog'
+        } only %}
+        {% include '@storybook/03-molecules/02-teasers/03-teaser-box/teaser-box.twig' with {
+          theme: 'yellow',
+          title: 'Become a colleague' | t,
+          teasers: jobs.teasers,
+          url: '/jobs'
+        } only %}
+      {% endblock %}
+    {% endembed %}
+  </div>
+</div>

@@ -1,0 +1,13 @@
+{% if teasers %}
+  <ul class="teaser-list">
+    {% for teaser in teasers %}
+      {% if teaser %}
+        <li>
+          {% include '@storybook/03-molecules/02-teasers/01-teaser/teaser.twig' with teaser only %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% else %}
+  <p><em>{{ 'Nothing found. Sadface :(' | t }}</em></p>
+{% endif %}
