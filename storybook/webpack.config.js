@@ -1,22 +1,11 @@
 const path = require('path');
+const common = require('./common-loaders');
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const jsRule = {
-  test: /\.(ts|js)$/,
-  loader: 'babel-loader',
-  options: {
-    presets: [
-      ["@babel/env", {
-        targets: {chrome: '63'},
-      }],
-      ["@babel/typescript"]
-    ],
-    plugins: [
-      ["@babel/plugin-proposal-decorators", { legacy: true }],
-    ]
-  }
-};
+// For building the library, we have to extract CSS.
+common.postcss.use.unshift('css-loader');
+common.postcss.use.unshift(MiniCssExtractPlugin.loader);
 
 module.exports = {
   entry: {
@@ -27,7 +16,8 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   },
-  resolve: { extensions: ['.ts', '.js', '.tsx', '.jsx'] },
+
+  resolve: {extensions: ['.ts', '.js']},
 
   plugins: [
     new MiniCssExtractPlugin({
@@ -38,23 +28,9 @@ module.exports = {
 
   module: {
     rules: [
-      jsRule,
-      {
-        test: /\.css$/,
-        use: [
-            MiniCssExtractPlugin.loader,
-            'css-loader',
-            'postcss-loader',
-        ]
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-          }
-        ],
-      }
+      common.javascript,
+      common.postcss,
+      common.assets
     ]
   }
 };
