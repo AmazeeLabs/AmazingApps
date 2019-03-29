@@ -6,9 +6,6 @@ parameters:
   http.response.debug_cacheability_headers: true
   graphql.config:
     development: true
-  twig.config:
-    debug: true
-    cache: false
 
 services:
   cache.backend.null:

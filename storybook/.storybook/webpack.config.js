@@ -2,7 +2,7 @@ const common = require('../common-loaders');
 const path = require('path');
 
 module.exports = ({ config, mode }) => {
-  // Reuse common webpack configuration.
+	// Reuse common webpack configuration.
 	config.module.rules.push(common.javascript);
 	config.module.rules.push(common.assets);
 	config.module.rules.push(common.postcss);
