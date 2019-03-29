@@ -76,12 +76,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AmazeeLabs/silverback.git",
-                "reference": "7936f238f23cddf1407baf58182c357f953ff035"
+                "reference": "03b755f85164cd833475e7392e89158be6013b7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AmazeeLabs/silverback/zipball/7936f238f23cddf1407baf58182c357f953ff035",
-                "reference": "7936f238f23cddf1407baf58182c357f953ff035",
+                "url": "https://api.github.com/repos/AmazeeLabs/silverback/zipball/03b755f85164cd833475e7392e89158be6013b7f",
+                "reference": "03b755f85164cd833475e7392e89158be6013b7f",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
                 }
             ],
             "description": "Scaffolder for Amazee Silverback projects.",
-            "time": "2019-03-21T13:11:16+00:00"
+            "time": "2019-03-29T10:22:17+00:00"
         },
         {
             "name": "asm89/stack-cors",

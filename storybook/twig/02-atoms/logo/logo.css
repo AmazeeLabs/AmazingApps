@@ -1,4 +1,7 @@
 .logo {
+  background: url('./logo.png') no-repeat center;
+  background-image: url('./logo.svg');
+  background-size: contain;
   color: var(--color-highlight);
   font-weight: bold;
   font-size: 2em;
@@ -6,14 +9,7 @@
 }
 
 .logo > a {
+  display: block;
+  padding-bottom: 63%;
   text-decoration: none;
-}
-
-.logo svg {
-  height: 100%;
-  width: auto;
-}
-
-.logo path {
-  fill: var(--color-text) !important;
 }

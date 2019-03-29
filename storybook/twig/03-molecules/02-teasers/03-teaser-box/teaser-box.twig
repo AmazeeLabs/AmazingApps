@@ -1,9 +1,11 @@
-<aside class="teaser-box theme-{{ theme }}">
-  <h2>{{ title }}</h2>
-  {% include '@storybook/03-molecules/02-teasers/02-teaser-list/teaser-list.twig' with { teasers: teasers } only %}
-  {% include '@storybook/02-atoms/more-link/more-link.twig' with {
-    text: 'Show all' | t,
-    title: 'Show all' | t,
-    url: url
-  } only %}
-</aside>
+<aa-collapsible class="teaser-box theme-{{ theme }}">
+  <h2 slot="title">{{ title }}</h2>
+  <div slot="content">
+    {% include '@storybook/03-molecules/02-teasers/02-teaser-list/teaser-list.twig' with { teasers: teasers } only %}
+    {% include '@storybook/02-atoms/more-link/more-link.twig' with {
+      text: 'Show all' | t,
+      title: 'Show all' | t,
+      url: url
+    } only %}
+  </div>
+</aa-collapsible>
