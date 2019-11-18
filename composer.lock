@@ -1780,7 +1780,7 @@
             "version": "1.26.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/admin_toolbar",
+                "url": "https://git.drupalcode.org/project/admin_toolbar.git",
                 "reference": "8.x-1.26"
             },
             "dist": {
@@ -1799,7 +1799,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.26",
-                    "datestamp": "1549559402",
+                    "datestamp": "1558552081",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1861,7 +1861,7 @@
             "version": "1.0.0-alpha13",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/ckeditor5_sections",
+                "url": "https://git.drupalcode.org/project/ckeditor5_sections.git",
                 "reference": "8.x-1.0-alpha13"
             },
             "dist": {
@@ -1881,7 +1881,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha13",
-                    "datestamp": "1552484220",
+                    "datestamp": "1559134090",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1894,6 +1894,10 @@
             ],
             "authors": [
                 {
+                    "name": "monya",
+                    "homepage": "https://www.drupal.org/user/2394756"
+                },
+                {
                     "name": "pmelab",
                     "homepage": "https://www.drupal.org/user/555322"
                 }
@@ -1901,7 +1905,7 @@
             "description": "Provides the Sections editor based on ckeditor5.",
             "homepage": "https://www.drupal.org/project/ckeditor5_sections",
             "support": {
-                "source": "http://cgit.drupalcode.org/ckeditor5_sections"
+                "source": "https://git.drupalcode.org/project/ckeditor5_sections"
             }
         },
         {
@@ -1909,7 +1913,7 @@
             "version": "1.1.0-alpha2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/components",
+                "url": "https://git.drupalcode.org/project/components.git",
                 "reference": "8.x-1.1-alpha2"
             },
             "dist": {
@@ -1928,7 +1932,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.1-alpha2",
-                    "datestamp": "1550161984",
+                    "datestamp": "1556870881",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -1952,7 +1956,7 @@
             "description": "Registers “component libraries” defined in modules and themes with the Twig system",
             "homepage": "https://www.drupal.org/project/components",
             "support": {
-                "source": "http://cgit.drupalcode.org/components"
+                "source": "https://git.drupalcode.org/project/components"
             }
         },
         {
@@ -2457,7 +2461,7 @@
             "version": "2.0.0-alpha8",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/entity_usage",
+                "url": "https://git.drupalcode.org/project/entity_usage.git",
                 "reference": "8.x-2.0-alpha8"
             },
             "dist": {
@@ -2484,7 +2488,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-alpha8",
-                    "datestamp": "1541781780",
+                    "datestamp": "1561364886",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -2520,7 +2524,7 @@
             "version": "3.0.0-rc2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/graphql",
+                "url": "https://git.drupalcode.org/project/graphql.git",
                 "reference": "8.x-3.0-rc2"
             },
             "dist": {
@@ -2540,7 +2544,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-rc2",
-                    "datestamp": "1537443780",
+                    "datestamp": "1555138081",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2557,6 +2561,10 @@
                     "homepage": "https://www.drupal.org/user/761344"
                 },
                 {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                },
+                {
                     "name": "pmelab",
                     "homepage": "https://www.drupal.org/user/555322"
                 }
@@ -2564,7 +2572,7 @@
             "description": "Exposes your Drupal data model through a GraphQL schema.",
             "homepage": "http://drupal.org/project/graphql",
             "support": {
-                "source": "http://cgit.drupalcode.org/graphql"
+                "source": "https://git.drupalcode.org/project/graphql"
             }
         },
         {
@@ -2581,7 +2589,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-rc2",
-                    "datestamp": "1537443780",
+                    "datestamp": "1555138081",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2598,6 +2606,10 @@
                     "homepage": "https://www.drupal.org/user/761344"
                 },
                 {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                },
+                {
                     "name": "pmelab",
                     "homepage": "https://www.drupal.org/user/555322"
                 }
@@ -2605,7 +2617,7 @@
             "description": "Provides type system plugins and derivers on behalf of core modules.",
             "homepage": "https://www.drupal.org/project/graphql",
             "support": {
-                "source": "http://cgit.drupalcode.org/graphql"
+                "source": "https://git.drupalcode.org/project/graphql"
             }
         },
         {
@@ -2613,7 +2625,7 @@
             "version": "1.0.0-beta11",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/graphql_twig",
+                "url": "https://git.drupalcode.org/project/graphql_twig.git",
                 "reference": "8.x-1.0-beta11"
             },
             "dist": {
@@ -2633,7 +2645,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta11",
-                    "datestamp": "1538056384",
+                    "datestamp": "1570436584",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -2652,12 +2664,16 @@
                 {
                     "name": "pmelab",
                     "homepage": "https://www.drupal.org/user/555322"
+                },
+                {
+                    "name": "saschaeggi",
+                    "homepage": "https://www.drupal.org/user/1999056"
                 }
             ],
             "description": "Feed Twig templates with GraphQL.",
             "homepage": "http://drupal.org/project/graphql_twig",
             "support": {
-                "source": "http://cgit.drupalcode.org/graphql_twig",
+                "source": "https://git.drupalcode.org/project/graphql_twig",
                 "issues": "https://github.com/drupal-graphql/graphql-twig"
             }
         },
@@ -2666,7 +2682,7 @@
             "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/graphql_views",
+                "url": "https://git.drupalcode.org/project/graphql_views.git",
                 "reference": "8.x-1.0-beta2"
             },
             "dist": {
@@ -2686,7 +2702,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta2",
-                    "datestamp": "1542832980",
+                    "datestamp": "1572852485",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -2710,7 +2726,7 @@
             "description": "Exposes your Drupal Views data model through a GraphQL schema.",
             "homepage": "http://drupal.org/project/graphql_views",
             "support": {
-                "source": "http://cgit.drupalcode.org/graphql_views"
+                "source": "https://git.drupalcode.org/project/graphql_views"
             }
         },
         {
@@ -2718,7 +2734,7 @@
             "version": "5.0.0-beta8",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/linkit",
+                "url": "https://git.drupalcode.org/project/linkit.git",
                 "reference": "8.x-5.0-beta8"
             },
             "dist": {
@@ -2740,7 +2756,7 @@
                 },
                 "drupal": {
                     "version": "8.x-5.0-beta8",
-                    "datestamp": "1545966784",
+                    "datestamp": "1562194985",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -2771,8 +2787,8 @@
             "version": "dev-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/moderation_state_buttons_widget",
-                "reference": "8ea76ecbcb96ac5fdb428ead8cf0d184a8709138"
+                "url": "https://git.drupalcode.org/project/moderation_state_buttons_widget.git",
+                "reference": "b38373b4057bda26f3b576b91cdb0c747ce6c386"
             },
             "require": {
                 "drupal/core": "*"
@@ -2783,8 +2799,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3+0-dev",
-                    "datestamp": "1550846285",
+                    "version": "8.x-1.0-alpha3+1-dev",
+                    "datestamp": "1551197585",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2810,20 +2826,22 @@
                 "source": "http://cgit.drupalcode.org/moderation_state_buttons_widget",
                 "issues": "https://www.drupal.org/project/issues/moderation_state_buttons_widget"
             },
-            "time": "2019-02-26T16:12:13+00:00"
+            "time": "2019-05-21T10:47:18+00:00"
         },
         {
             "name": "drupal/moderation_state_columns",
             "version": "dev-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/moderation_state_columns",
-                "reference": "b58946eab880bf88fec522cc849a538d70dac121"
+                "url": "https://git.drupalcode.org/project/moderation_state_columns.git",
+                "reference": "763302557877fbf9faf60282ba38d130c94a45ed"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/webpack_react": "*",
                 "ext-json": "*"
+            },
+            "require-dev": {
+                "drupal/webpack_react": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -2831,11 +2849,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1540924681",
+                    "version": "8.x-1.1+0-dev",
+                    "datestamp": "1569332584",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2845,8 +2863,9 @@
             ],
             "authors": [
                 {
-                    "name": "blazey",
-                    "homepage": "https://www.drupal.org/user/353861"
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
                 }
             ],
             "description": "Provides a view display that shows moderation states as columns.",
@@ -2858,14 +2877,14 @@
                 "source": "http://cgit.drupalcode.org/moderation_state_columns",
                 "issues": "https://www.drupal.org/project/issues/moderation_state_columns"
             },
-            "time": "2018-11-02T19:25:21+00:00"
+            "time": "2019-09-24T13:38:41+00:00"
         },
         {
             "name": "drupal/moderation_state_permissions",
             "version": "dev-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/moderation_state_permissions",
+                "url": "https://git.drupalcode.org/project/moderation_state_permissions.git",
                 "reference": "c5db93e3e7e01dd1910136bcbb13ac831eb08dc8"
             },
             "require": {
@@ -2911,7 +2930,7 @@
             "version": "1.0.0-alpha9",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/npm",
+                "url": "https://git.drupalcode.org/project/npm.git",
                 "reference": "8.x-1.0-alpha9"
             },
             "dist": {
@@ -2931,7 +2950,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha9",
-                    "datestamp": "1550829184",
+                    "datestamp": "1554914881",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2974,7 +2993,7 @@
             "version": "1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/redirect",
+                "url": "https://git.drupalcode.org/project/redirect.git",
                 "reference": "8.x-1.3"
             },
             "dist": {
@@ -2993,7 +3012,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1539682684",
+                    "datestamp": "1561757585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3021,7 +3040,7 @@
             "description": "Allows users to redirect from old URLs to new URLs.",
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
-                "source": "http://cgit.drupalcode.org/redirect"
+                "source": "https://git.drupalcode.org/project/redirect"
             }
         },
         {
@@ -3029,7 +3048,7 @@
             "version": "1.7.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/tmgmt",
+                "url": "https://git.drupalcode.org/project/tmgmt.git",
                 "reference": "8.x-1.7"
             },
             "dist": {
@@ -3058,7 +3077,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.7",
-                    "datestamp": "1550692533",
+                    "datestamp": "1556745486",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3106,7 +3125,7 @@
             "description": "Translation Management Tool",
             "homepage": "https://www.drupal.org/project/tmgmt",
             "support": {
-                "source": "http://cgit.drupalcode.org/tmgmt"
+                "source": "https://git.drupalcode.org/project/tmgmt"
             }
         },
         {
@@ -3114,7 +3133,7 @@
             "version": "dev-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/user_reference_access",
+                "url": "https://git.drupalcode.org/project/user_reference_access.git",
                 "reference": "226f011471bf44c275851d84828aa4bd5fbd7bef"
             },
             "require": {
@@ -3160,7 +3179,7 @@
             "version": "1.0.0-alpha12",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/webpack",
+                "url": "https://git.drupalcode.org/project/webpack.git",
                 "reference": "8.x-1.0-alpha12"
             },
             "dist": {
@@ -3183,10 +3202,10 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha12",
-                    "datestamp": "1550828888",
+                    "datestamp": "1569330487",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
@@ -3226,7 +3245,7 @@
             "version": "1.0.0-alpha4",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/webpack_babel",
+                "url": "https://git.drupalcode.org/project/webpack_babel.git",
                 "reference": "8.x-1.0-alpha4"
             },
             "dist": {
@@ -3246,7 +3265,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha4",
-                    "datestamp": "1539959881",
+                    "datestamp": "1564435385",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3284,7 +3303,7 @@
             "version": "dev-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/webpack_react",
+                "url": "https://git.drupalcode.org/project/webpack_react.git",
                 "reference": "e19f09bcd6d495544162258a9e6b6d42517c11d3"
             },
             "require": {
@@ -4848,16 +4867,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.4.15",
+            "version": "v3.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "09d7df7bf06c1393b6afc85875993cbdbdf897a0"
+                "reference": "0ea4d39ca82409a25a43b61ce828048a90000920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/09d7df7bf06c1393b6afc85875993cbdbdf897a0",
-                "reference": "09d7df7bf06c1393b6afc85875993cbdbdf897a0",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/0ea4d39ca82409a25a43b61ce828048a90000920",
+                "reference": "0ea4d39ca82409a25a43b61ce828048a90000920",
                 "shasum": ""
             },
             "require": {
@@ -4915,7 +4934,7 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-08T11:42:34+00:00"
+            "time": "2019-11-08T16:18:30+00:00"
         },
         {
             "name": "symfony/dom-crawler",
@@ -6689,12 +6708,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/Mink.git",
-                "reference": "d5ee350c40baff5f331a05ebdbe1927345c9ac8b"
+                "reference": "a534fe7dac9525e8e10ca68e737c3d7e5058ec83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/Mink/zipball/d5ee350c40baff5f331a05ebdbe1927345c9ac8b",
-                "reference": "d5ee350c40baff5f331a05ebdbe1927345c9ac8b",
+                "url": "https://api.github.com/repos/minkphp/Mink/zipball/a534fe7dac9525e8e10ca68e737c3d7e5058ec83",
+                "reference": "a534fe7dac9525e8e10ca68e737c3d7e5058ec83",
                 "shasum": ""
             },
             "require": {
@@ -6702,7 +6721,7 @@
                 "symfony/css-selector": "^2.7|^3.0|^4.0"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "^3.3|^4.0"
+                "symfony/phpunit-bridge": "^4.2"
             },
             "suggest": {
                 "behat/mink-browserkit-driver": "extremely fast headless driver for Symfony\\Kernel-based apps (Sf2, Silex)",
@@ -6740,7 +6759,7 @@
                 "testing",
                 "web"
             ],
-            "time": "2018-06-24T20:08:51+00:00"
+            "time": "2019-07-15T12:45:29+00:00"
         },
         {
             "name": "behat/mink-browserkit-driver",
@@ -6855,22 +6874,22 @@
         },
         {
             "name": "behat/mink-selenium2-driver",
-            "version": "dev-master",
+            "version": "1.3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/minkphp/MinkSelenium2Driver.git",
-                "reference": "f4efaf52fed6a98bf6037a04f3fdef94dc0c8841"
+                "reference": "0a09c4341621fca937a726827611b20ce3e2c259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/f4efaf52fed6a98bf6037a04f3fdef94dc0c8841",
-                "reference": "f4efaf52fed6a98bf6037a04f3fdef94dc0c8841",
+                "url": "https://api.github.com/repos/minkphp/MinkSelenium2Driver/zipball/0a09c4341621fca937a726827611b20ce3e2c259",
+                "reference": "0a09c4341621fca937a726827611b20ce3e2c259",
                 "shasum": ""
             },
             "require": {
                 "behat/mink": "~1.7@dev",
                 "instaclick/php-webdriver": "~1.1",
-                "php": ">=5.3.1"
+                "php": ">=5.4"
             },
             "require-dev": {
                 "mink/driver-testsuite": "dev-master"
@@ -6892,14 +6911,14 @@
             ],
             "authors": [
                 {
-                    "name": "Konstantin Kudryashov",
-                    "email": "ever.zet@gmail.com",
-                    "homepage": "http://everzet.com"
-                },
-                {
                     "name": "Pete Otaqui",
                     "email": "pete@otaqui.com",
                     "homepage": "https://github.com/pete-otaqui"
+                },
+                {
+                    "name": "Konstantin Kudryashov",
+                    "email": "ever.zet@gmail.com",
+                    "homepage": "http://everzet.com"
                 }
             ],
             "description": "Selenium2 (WebDriver) driver for Mink framework",
@@ -6912,7 +6931,7 @@
                 "testing",
                 "webdriver"
             ],
-            "time": "2018-07-23T10:51:47+00:00"
+            "time": "2019-09-02T09:46:54+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -6973,7 +6992,7 @@
             "version": "8.3.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/coder.git",
+                "url": "https://git.drupalcode.org/project/coder.git",
                 "reference": "fd3321a777a645dd683a8c6ecf4978012357717b"
             },
             "require": {
@@ -7235,16 +7254,16 @@
             "time": "2016-12-01T10:57:30+00:00"
         },
         {
-            "name": "mikey179/vfsStream",
+            "name": "mikey179/vfsstream",
             "version": "v1.6.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikey179/vfsStream.git",
+                "url": "https://github.com/bovigo/vfsStream.git",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "shasum": ""
             },
